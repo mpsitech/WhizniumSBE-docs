@@ -4,37 +4,39 @@ Database structure ``[IexWznmDbs]``
 Schema
 ---
 
-![Figure 1: Database structure schema - table columns in light blue are part of the input file, table columns in dark blue are inferred](./IexWznmDbs.jpg)
+![](./IexWznmDbs.jpg)
+
+<p align="center"><em>Figure 1: Database structure schema - table columns in light blue are part of the input file, table columns in dark blue are inferred</em></p>
 
 Structure
 ---
 
 [//]: # (IP structure - BEGIN)
 
-<br>&nbsp;&nbsp;&nbsp;&nbsp;\- TblWznmCRelation [``[ImeICRelation]``](#1-tblwznmcrelation-ImeICRelation)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;\+ Relation [``[ImeIMRelation]``](#ImeIMRelation)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Names [``[ImeIAMRelationTitle]``](#ImeIAMRelationTitle)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;\- Stub [``[ImeIMStub]``](#ImeIMStub)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;\+ Table [``[ImeIMTable]``](#ImeIMTable)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Load functions [``[ImeIAMTableLoadfct]``](#ImeIAMTableLoadfct)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Names [``[ImeIAMTableTitle]``](#ImeIAMTableTitle)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Feature check [``[ImeIMCheck]``](#ImeIMCheck)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\+ Subset [``[ImeIMSubset]``](#ImeIMSubset)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Names [``[ImeIAMSubsetTitle]``](#ImeIAMSubsetTitle)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- TblWznmRMSubsetMSubset [``[ImeIRMSubsetMSubset]``](#ImeIRMSubsetMSubset)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\+ Table column [``[ImeIMTablecol]``](#ImeIMTablecol)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Names [``[ImeIAMTablecolTitle]``](#ImeIAMTablecolTitle)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\+ Vector [``[ImeIMVector2]``](#ImeIMVector2)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Names [``[ImeIAMVectorTitle2]``](#ImeIAMVectorTitle2)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\+ Vector item [``[ImeIMVectoritem2]``](#ImeIMVectoritem2)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Name and comment by locale [``[ImeIJMVectoritem2]``](#ImeIJMVectoritem2)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- TblWznmRMTableMVector [``[ImeIRMTableMVector2]``](#ImeIRMTableMVector2)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;\+ Vector [``[ImeIMVector1]``](#ImeIMVector1)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Names [``[ImeIAMVectorTitle1]``](#ImeIAMVectorTitle1)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\+ Vector item [``[ImeIMVectoritem1]``](#ImeIMVectoritem1)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Name and comment by locale [``[ImeIJMVectoritem1]``](#ImeIJMVectoritem1)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- TblWznmRMTableMVector [``[ImeIRMTableMVector1]``](#ImeIRMTableMVector1)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;\- TblWznmRMStubMStub [``[ImeIRMStubMStub]``](#ImeIRMStubMStub)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;\- TblWznmCRelation [``[ImeICRelation]``](#1-tblwznmcrelation-imeicrelation)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;\+ Relation [``[ImeIMRelation]``](#2-relation-imeimrelation)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Names [``[ImeIAMRelationTitle]``](#21-names-imeiamrelationtitle)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;\- Stub [``[ImeIMStub]``](#3-stub-imeimstub)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;\+ Table [``[ImeIMTable]``](#4-table-imeimtable)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Load functions [``[ImeIAMTableLoadfct]``](#41-load-functions-imeiamtableloadfct)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Names [``[ImeIAMTableTitle]``](#42-names-imeiamtabletitle)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Feature check [``[ImeIMCheck]``](#43-feature-check-imeimcheck)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\+ Subset [``[ImeIMSubset]``](#44-subset-imeimsubset)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Names [``[ImeIAMSubsetTitle]``](#441-names-imeiamsubsettitle)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- TblWznmRMSubsetMSubset [``[ImeIRMSubsetMSubset]``](#442-tblwznmrmsubsetmsubset-imeirmsubsetmsubset)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\+ Table column [``[ImeIMTablecol]``](#45-table-column-imeimtablecol)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Names [``[ImeIAMTablecolTitle]``](#451-names-imeiamtablecoltitle)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\+ Vector [``[ImeIMVector2]``](#46-vector-imeimvector2)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Names [``[ImeIAMVectorTitle2]``](#461-names-imeiamvectortitle2)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\+ Vector item [``[ImeIMVectoritem2]``](#462-vector-item-imeimvectoritem2)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Name and comment by locale [``[ImeIJMVectoritem2]``](#4621-name-and-comment-by-locale-imeijmvectoritem2)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- TblWznmRMTableMVector [``[ImeIRMTableMVector2]``](#463-tblwznmrmtablemvector-imeirmtablemvector2)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;\+ Vector [``[ImeIMVector1]``](#5-vector-imeimvector1)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Names [``[ImeIAMVectorTitle1]``](#51-names-imeiamvectortitle1)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\+ Vector item [``[ImeIMVectoritem1]``](#52-vector-item-imeimvectoritem1)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Name and comment by locale [``[ImeIJMVectoritem1]``](#521-name-and-comment-by-locale-imeijmvectoritem1)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- TblWznmRMTableMVector [``[ImeIRMTableMVector1]``](#53-tblwznmrmtablemvector-imeirmtablemvector1)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;\- TblWznmRMStubMStub [``[ImeIRMStubMStub]``](#6-tblwznmrmstubmstub-imeirmstubmstub)
 
 [//]: # (IP structure - END)
 
