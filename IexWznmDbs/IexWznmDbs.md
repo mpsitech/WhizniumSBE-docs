@@ -11,7 +11,7 @@ Structure
 
 [//]: # (IP structure - BEGIN)
 
-<br>&nbsp;&nbsp;&nbsp;&nbsp;\- TblWznmCRelation [``[ImeICRelation]``](#1-tblwznmcrelation-imeicrelation)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;\- TblWznmCRelation [``[ImeICRelation]``](#1-tblwznmcrelation-ImeICRelation)
 <br>&nbsp;&nbsp;&nbsp;&nbsp;\+ Relation [``[ImeIMRelation]``](#ImeIMRelation)
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Names [``[ImeIAMRelationTitle]``](#ImeIAMRelationTitle)
 <br>&nbsp;&nbsp;&nbsp;&nbsp;\- Stub [``[ImeIMStub]``](#ImeIMStub)
