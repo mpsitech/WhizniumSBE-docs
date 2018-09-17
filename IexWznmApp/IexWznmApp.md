@@ -4,19 +4,21 @@ App features ``[IexWznmApp]``
 Schema
 ---
 
-![Figure 1: App features schema - table columns in light blue are part of the input file, table columns in dark blue are inferred](./IexWznmApp.jpg)
+![](./IexWznmApp.jpg)
+
+<p align="center"><em>Figure 1: App features schema - table columns in light blue are part of the input file, table columns in dark blue are inferred</em></p>
 
 Structure
 ---
 
 [//]: # (IP structure - BEGIN)
 
-<br>&nbsp;&nbsp;&nbsp;&nbsp;\+ Run-time job [``[ImeIMRtjob]``](#1-run-time-job)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Run-time data block [``[ImeIMRtblock]``](#11-run-time-data-block)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Run-time dispatch [``[ImeIMRtdpch]``](#12-run-time-dispatch)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;\+ Sequence [``[ImeIMSequence]``](#2-sequence)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\+ State [``[ImeIMState]``](#21-state)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Steppings [``[ImeIAMStateStep]``](#211-steppings)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;\+ Run-time job [``[ImeIMRtjob]``](#1-run-time-job-imeimrtjob)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Run-time data block [``[ImeIMRtblock]``](#11-run-time-data-block-imeimrtblock)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Run-time dispatch [``[ImeIMRtdpch]``](#12-run-time-dispatch-imeimrtdpch)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;\+ Sequence [``[ImeIMSequence]``](#2-sequence-imeimsequence)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\+ State [``[ImeIMState]``](#21-state-imeimstate)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Steppings [``[ImeIAMStateStep]``](#211-steppings-imeiamstatestep)
 
 [//]: # (IP structure - END)
 
@@ -154,4 +156,4 @@ Custcode (bool)|Custcode|
 
 [//]: # (IP ImeIAMStateStep.columns - END)
 
-<small>Markdown for WhizniumSBE 0.9.12 auto-generated (what else ;-) ) by WhizniumSBE on 16 Sep 2018</small>
+<em>Markdown for WhizniumSBE 0.9.12 auto-generated (what else ;-) ) by WhizniumSBE on 16 Sep 2018</em>
