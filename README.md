@@ -1,6 +1,8 @@
 # WhizniumSBE Documentation
 
-This is a collection of information to help with the WhizniumSBE softeare development procees. Additional help is available in the form of public repositories of example projects.
+This is a collection of files to help with the WhizniumSBE software development procees. Additional help is available in the form of public repositories containing code of example projects.
+
+It is suggested to make a local copy of this repository. Editors such as Visual Studio Code have built-in Markdown rendering functionality.
 
 Files in this repository:
 
