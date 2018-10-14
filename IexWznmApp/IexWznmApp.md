@@ -29,7 +29,7 @@ Details
 
 [//]: # (IP ImeIMRtjob.superUse - BEGIN)
 
-Use:
+Use: specify the part of job tree which is relevant for the app / establish hierarchical DOM.
 
 [//]: # (IP ImeIMRtjob.superUse - END)
 
@@ -37,7 +37,7 @@ Use:
 
 Column|Content|
 -|-|
-iref (ubigint)|ref|
+iref (ubigint)|integer reference|
 irefSupRefWznmMRtjob (ubigint)|super run-time job|
 srefRefWznmMJob (string)|job|
 sref (string)|identifier|
@@ -51,7 +51,7 @@ Comment (string)|comment|
 
 Super import: run-time job (1:N)
 
-Use:
+Use: specify XML data blocks relevant for the app, to be incorporated into the DOM.
 
 [//]: # (IP ImeIMRtblock.superUse - END)
 
@@ -62,7 +62,7 @@ Column|Content|
 srefRefIxVTbl (string)|reference<br>blk: block<br>fed: feed<br>tbl: table|
 srefRefUref (string)|reference|
 sref (string)|identifier|
-srcSrefsWznmAMBlockItem (string)|items|
+srcSrefsWznmAMBlockItem (string)|dispatch sources|
 
 [//]: # (IP ImeIMRtblock.columns - END)
 
@@ -72,7 +72,7 @@ srcSrefsWznmAMBlockItem (string)|items|
 
 Super import: run-time job (1:N)
 
-Use:
+Use: engine dispatches to be processed in the app.
 
 [//]: # (IP ImeIMRtdpch.superUse - END)
 
@@ -90,7 +90,7 @@ Merge (bool)|merge content|
 
 [//]: # (IP ImeIMSequence.superUse - BEGIN)
 
-Use:
+Use: grouping entity for states.
 
 [//]: # (IP ImeIMSequence.superUse - END)
 
@@ -110,7 +110,7 @@ Comment (string)|comment|
 
 Super import: sequence (1:N)
 
-Use:
+Use: state machine definition, allowing to perform several dispatch exchanges with the engine in a row, in event-driven fashion.
 
 [//]: # (IP ImeIMState.superUse - END)
 
@@ -125,7 +125,7 @@ srefEveRefWznmMVector (string)|do vector for enter action|
 srefEviRefWznmMVectoritem (string)|do vector item for enter action|
 srefEsnRefWznmMState (string)|state to step to for enter action|
 srefLacIxVAction (string)|action when leaving<br>void: none<br>login: start session<br>init: initialize UI job<br>do: trigger UI action<br>step: step to next state<br>cust: custom code|
-Custstep (bool)|Custstep|
+Custstep (bool)|custom code insertion point for stepping|
 Comment (string)|comment|
 
 [//]: # (IP ImeIMState.columns - END)
@@ -136,7 +136,7 @@ Comment (string)|comment|
 
 Super import: state (1:N)
 
-Use:
+Use: conditional change of state.
 
 [//]: # (IP ImeIAMStateStep.superUse - END)
 
@@ -146,13 +146,13 @@ Column|Content|
 -|-|
 srefSnxRefWznmMState (string)|next state|
 srefIxVTrigger (string)|trigger<br>sgeeq: stage equals<br>jobex: job exists<br>jobnex: job doesn't exist<br>confacc: confirmation received<br>confdny: denial received<br>dpchrcv: dispatch received<br>cust: custom condition|
-irefRefWznmMRtjob (ubigint)|run-time job|
+irefRefWznmMRtjob (ubigint)|jobex, jobnex, confacc, confdny, dpchrcv triggers - run-time job concerned|
 srefRefWznmMVectoritem (string)|vector item|
-xsref (string)|xsref|
-srefRefWznmMRtdpch (string)|dispatch|
-srefsMask (string)|srefsMask|
-Cond (string)|Cond|
-Custcode (bool)|Custcode|
+xsref (string)|confacc trigger - sref (identifier) content filter|
+srefRefWznmMRtdpch (string)|dpchrcv trigger - run-time dispatch|
+srefsMask (string)|dpchrcv trigger - mandatory content of dispatch received|
+Cond (string)|cust trigger - condition (actual C++/Objective-C/Java code)|
+Custcode (bool)|custom code insertion point|
 
 [//]: # (IP ImeIAMStateStep.columns - END)
 

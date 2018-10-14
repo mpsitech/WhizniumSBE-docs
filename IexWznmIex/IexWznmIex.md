@@ -27,7 +27,7 @@ Details
 
 [//]: # (IP ImeIMImpexpcplx.superUse - BEGIN)
 
-Use:
+Use: create hierarchical pattern for text-/XML-based import/export of data into/from a set of database tables.
 
 [//]: # (IP ImeIMImpexpcplx.superUse - END)
 
@@ -47,7 +47,7 @@ Comment (string)|comment|
 
 Super import: import/export complex (1:N)
 
-Use:
+Use: one import/export maps to one database table.
 
 [//]: # (IP ImeIMImpexp.superUse - END)
 
@@ -55,11 +55,11 @@ Use:
 
 Column|Content|
 -|-|
-iref (ubigint)|ref|
+iref (ubigint)|integer reference|
 irefSupRefWznmMImpexp (ubigint)|super import/export|
 srefRefWznmMTable (string)|table|
 sref (string)|identifier|
-rtrSrefsWznmMImpexpcol (string)|import/export column|
+rtrSrefsWznmMImpexpcol (string)|retr, retrupd, retrins, rmv import operations - import/export columns by which to retrieve record|
 srefsIxWIop (string)|import operations<br>ins: insert<br>retr: retrieve<br>retrupd: retrieve and update<br>retrins: retrieve, else insert<br>rmv: remove<br>cust: custom|
 Comment (string)|comment|
 
@@ -71,7 +71,7 @@ Comment (string)|comment|
 
 Super import: import/export (1:N)
 
-Use:
+Use: one import/export column maps to one table column with the exception of the iop and iarg types.
 
 [//]: # (IP ImeIMImpexpcol.superUse - END)
 
@@ -84,12 +84,12 @@ srefsIxWOccurrence (string)|occurrence<br>fil: import/export file<br>tbl: base t
 srefRefWznmMTablecol (string)|table column|
 sref (string)|identifier|
 Short (string)|acronym|
-irefRefWznmMImpexp (ubigint)|import/export|
+irefRefWznmMImpexp (ubigint)|sup, sub conversion types: corresponding import/export|
 srefIxVConvtype (string)|conversion type<br>void: none<br>previmp: find in previous import<br>cust: custom<br>custsql: custom SQL query<br>rst: find in recordset<br>imppp: previous import post-proc.<br>custsqlpp: custom SQL post-proc.<br>ixsref: vector item index vs. string ref<br>incr: increment<br>invftm: invert formatted time<br>sup: reference to super imp./exp.<br>sub: first in sub imp./exp.<br>defval: defval<br>preset: presetting<br>vecitem: vector item|
 Defval (string)|default value|
-srefRefWznmMPreset (string)|presetting|
-srefRefWznmMStub (string)|stub|
-srefRefWznmMVectoritem (string)|vector item|
+srefRefWznmMPreset (string)|preset conversion type - presetting|
+srefRefWznmMStub (string)|stub for export|
+srefRefWznmMVectoritem (string)|vecitem conversion type - vector item|
 
 [//]: # (IP ImeIMImpexpcol.columns - END)
 
@@ -99,7 +99,7 @@ srefRefWznmMVectoritem (string)|vector item|
 
 Super import: import/export column (1:N)
 
-Use:
+Use: stub distinction for export of universal references
 
 [//]: # (IP ImeIJMImpexpcolStub.superUse - END)
 

@@ -15,7 +15,7 @@ Structure
 
 <br>&nbsp;&nbsp;&nbsp;&nbsp;\+ Component [``[ImeIMComponent]``](#1-component-imeimcomponent)
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Release [``[ImeIMRelease]``](#11-release-imeimrelease)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- TblWznmRMComponentMLibrary [``[ImeIRMComponentMLibrary]``](#12-tblwznmrmcomponentmlibrary-imeirmcomponentmlibrary)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Libraries [``[ImeIRMComponentMLibrary]``](#12-libraries-imeirmcomponentmlibrary)
 
 [//]: # (IP structure - END)
 
@@ -26,7 +26,7 @@ Details
 
 [//]: # (IP ImeIMComponent.superUse - BEGIN)
 
-Use:
+Use: define product of WhizniumSBE code generation process.
 
 [//]: # (IP ImeIMComponent.superUse - END)
 
@@ -47,7 +47,7 @@ Comment (string)|comment|
 
 Super import: component (1:N)
 
-Use:
+Use: define component-machine pairs in order to generate corresponding makefiles.
 
 [//]: # (IP ImeIMRelease.superUse - END)
 
@@ -62,13 +62,13 @@ Comment (string)|comment|
 
 [//]: # (IP ImeIMRelease.columns - END)
 
-### 1.2 TblWznmRMComponentMLibrary ``[ImeIRMComponentMLibrary]``
+### 1.2 Libraries ``[ImeIRMComponentMLibrary]``
 
 [//]: # (IP ImeIRMComponentMLibrary.superUse - BEGIN)
 
 Super import: component (1:N)
 
-Use:
+Use: specifiy external libraries to link to.
 
 [//]: # (IP ImeIRMComponentMLibrary.superUse - END)
 

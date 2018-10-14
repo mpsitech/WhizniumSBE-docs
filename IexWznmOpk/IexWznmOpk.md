@@ -16,27 +16,27 @@ Structure
 <br>&nbsp;&nbsp;&nbsp;&nbsp;\+ Operation pack [``[ImeIMOppack]``](#1-operation-pack-imeimoppack)
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Invocation arguments [``[ImeIAMOppackInvarg]``](#11-invocation-arguments-imeiamoppackinvarg)
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Return values [``[ImeIAMOppackRetval]``](#12-return-values-imeiamoppackretval)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- TblWznmCAMOppackInvarg [``[ImeICAMOppackInvarg]``](#13-tblwznmcamoppackinvarg-imeicamoppackinvarg)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- TblWznmCAMOppackRetval [``[ImeICAMOppackRetval]``](#14-tblwznmcamoppackretval-imeicamoppackretval)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Invocation arguments cluster [``[ImeICAMOppackInvarg]``](#13-invocation-arguments-cluster-imeicamoppackinvarg)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Return values cluster [``[ImeICAMOppackRetval]``](#14-return-values-cluster-imeicamoppackretval)
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\+ Block [``[ImeIMBlock1]``](#15-block-imeimblock1)
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Items [``[ImeIAMBlockItem1]``](#151-items-imeiamblockitem1)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- TblWznmCAMBlockItem [``[ImeICAMBlockItem1]``](#1511-tblwznmcamblockitem-imeicamblockitem1)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Items cluster [``[ImeICAMBlockItem1]``](#1511-items-cluster-imeicamblockitem1)
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\+ Operation [``[ImeIMOp]``](#16-operation-imeimop)
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Invocation arguments [``[ImeIAMOpInvarg]``](#161-invocation-arguments-imeiamopinvarg)
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Return values [``[ImeIAMOpRetval]``](#162-return-values-imeiamopretval)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- TblWznmCAMOpInvarg [``[ImeICAMOpInvarg]``](#163-tblwznmcamopinvarg-imeicamopinvarg)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- TblWznmCAMOpRetval [``[ImeICAMOpRetval]``](#164-tblwznmcamopretval-imeicamopretval)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Invocation arguments cluster [``[ImeICAMOpInvarg]``](#163-invocation-arguments-cluster-imeicamopinvarg)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Return values cluster [``[ImeICAMOpRetval]``](#164-return-values-cluster-imeicamopretval)
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\+ Block [``[ImeIMBlock2]``](#165-block-imeimblock2)
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Items [``[ImeIAMBlockItem2]``](#1651-items-imeiamblockitem2)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- TblWznmCAMBlockItem [``[ImeICAMBlockItem2]``](#1652-tblwznmcamblockitem-imeicamblockitem2)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Items cluster [``[ImeICAMBlockItem2]``](#1652-items-cluster-imeicamblockitem2)
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\+ Squawk [``[ImeIMSquawk2]``](#166-squatk-imeimsquawk2)
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Text by locale [``[ImeIJMSquawkTitle2]``](#1661-text-by-locale-imeijmsquawktitle2)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- TblWznmRMSquawkMStub [``[ImeIRMSquawkMStub2]``](#1662-tblwznmrmsquawkmstub-imeirmsquawkmstub2)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Stubs [``[ImeIRMSquawkMStub2]``](#1662-stubs-imeirmsquawkmstub2)
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\+ Squawk [``[ImeIMSquawk1]``](#17-squawk-imeimsquawk1)
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Text by locale [``[ImeIJMSquawkTitle1]``](#171-text-by-locale-imeijmsquawktitle1)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- TblWznmRMSquawkMStub [``[ImeIRMSquawkMStub1]``](#172-tblwznmrmsquawkmstub-imeirmsquawkmstub1)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- TblWznmRMComponentMOppack [``[ImeIRMComponentMOppack]``](#18-tblwznmrmcomponentmoppack-imeirmcomponentmoppack)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- TblWznmRMLibraryMOppack [``[ImeIRMLibraryMOppack]``](#19-tblwznmrmlibrarymoppack-imeirmlibrarymoppack)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Stubs [``[ImeIRMSquawkMStub1]``](#172-stubs-imeirmsquawkmstub1)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Part of components [``[ImeIRMComponentMOppack]``](#18-part-of-components-imeirmcomponentmoppack)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Libraries [``[ImeIRMLibraryMOppack]``](#19-libraries-imeirmlibrarymoppack)
 
 [//]: # (IP structure - END)
 
@@ -47,7 +47,7 @@ Details
 
 [//]: # (IP ImeIMOppack.superUse - BEGIN)
 
-Use:
+Use: self-explanatory.
 
 [//]: # (IP ImeIMOppack.superUse - END)
 
@@ -58,7 +58,7 @@ Column|Content|
 srefIxVBasetype (string)|type<br>cust: customizable<br>stat: static|
 sref (string)|identifier|
 Title (string)|name|
-Shrdat (bool)|exchange object data|
+Shrdat (bool)|shared data|
 Comment (string)|comment|
 
 [//]: # (IP ImeIMOppack.columns - END)
@@ -69,7 +69,7 @@ Comment (string)|comment|
 
 Super import: operation pack (1:N)
 
-Use:
+Use: customizable operation packs only - invocation arguments common to all operations.
 
 [//]: # (IP ImeIAMOppackInvarg.superUse - END)
 
@@ -77,12 +77,12 @@ Use:
 
 Column|Content|
 -|-|
-irefRefWznmCAMOppackInvarg (ubigint)|TblWznmCAMOppackInvarg|
+irefRefWznmCAMOppackInvarg (ubigint)|integer reference to ImeICAMOppackInvarg|
 sref (string)|identifier|
 srefIxWznmVVartype (string)|variable data type<br>void: none<br>boolean: boolean<br>tinyint: integer / byte (8bit)<br>utinyint: unsigned integer / byte (8bit)<br>smallint: integer (16bit)<br>usmallint: unsigned integer (16bit)<br>int: integer (32bit)<br>uint: unsigned integer (32bit)<br>bigint: integer (64bit)<br>ubigint: unsigned integer (64bit)<br>float: float<br>double: double<br>string: string<br>utinyintvec: unsigned int / byte 8bit vector<br>usmallintvec: unsigned int 16bit vector<br>intvec: integer 32bit vector<br>uintvec: unsigned int 32bit vector<br>ubigintvec: unsigned int 64bit vector<br>floatvec: float vector<br>doublevec: double vector<br>floatmat: float matrix<br>doublemat: double matrix<br>stringvec: string vector<br>vecsref: vector entry string reference<br>scrref: scrambled reference|
-srefRefWznmMVector (string)|vector|
+srefRefWznmMVector (string)|vecsref variable data type - vector|
 Defval (string)|default value|
-srefRefWznmMVectoritem (string)|vector item|
+srefRefWznmMVectoritem (string)|vecsref variable data type - vector item|
 Comment (string)|comment|
 
 [//]: # (IP ImeIAMOppackInvarg.columns - END)
@@ -93,7 +93,7 @@ Comment (string)|comment|
 
 Super import: operation pack (1:N)
 
-Use:
+Use: customizable operation packs only - return values common to all operations.
 
 [//]: # (IP ImeIAMOppackRetval.superUse - END)
 
@@ -101,21 +101,21 @@ Use:
 
 Column|Content|
 -|-|
-irefRefWznmCAMOppackRetval (ubigint)|TblWznmCAMOppackRetval|
+irefRefWznmCAMOppackRetval (ubigint)|integer reference to ImeICAMOppackRetval|
 sref (string)|identifier|
 srefIxWznmVVartype (string)|variable data type<br>void: none<br>boolean: boolean<br>tinyint: integer / byte (8bit)<br>utinyint: unsigned integer / byte (8bit)<br>smallint: integer (16bit)<br>usmallint: unsigned integer (16bit)<br>int: integer (32bit)<br>uint: unsigned integer (32bit)<br>bigint: integer (64bit)<br>ubigint: unsigned integer (64bit)<br>float: float<br>double: double<br>string: string<br>utinyintvec: unsigned int / byte 8bit vector<br>usmallintvec: unsigned int 16bit vector<br>intvec: integer 32bit vector<br>uintvec: unsigned int 32bit vector<br>ubigintvec: unsigned int 64bit vector<br>floatvec: float vector<br>doublevec: double vector<br>floatmat: float matrix<br>doublemat: double matrix<br>stringvec: string vector<br>vecsref: vector entry string reference<br>scrref: scrambled reference|
-srefRefWznmMVector (string)|vector|
+srefRefWznmMVector (string)|vecsref variable data type - vector|
 Comment (string)|comment|
 
 [//]: # (IP ImeIAMOppackRetval.columns - END)
 
-### 1.3 TblWznmCAMOppackInvarg ``[ImeICAMOppackInvarg]``
+### 1.3 Invocation arguments cluster ``[ImeICAMOppackInvarg]``
 
 [//]: # (IP ImeICAMOppackInvarg.superUse - BEGIN)
 
 Super import: operation pack (1:N)
 
-Use:
+Use: group invocation arguments.
 
 [//]: # (IP ImeICAMOppackInvarg.superUse - END)
 
@@ -123,17 +123,17 @@ Use:
 
 Column|Content|
 -|-|
-iref (ubigint)|ref|
+iref (ubigint)|integer reference|
 
 [//]: # (IP ImeICAMOppackInvarg.columns - END)
 
-### 1.4 TblWznmCAMOppackRetval ``[ImeICAMOppackRetval]``
+### 1.4 Return values cluster ``[ImeICAMOppackRetval]``
 
 [//]: # (IP ImeICAMOppackRetval.superUse - BEGIN)
 
 Super import: operation pack (1:N)
 
-Use:
+Use: group return values.
 
 [//]: # (IP ImeICAMOppackRetval.superUse - END)
 
@@ -141,7 +141,7 @@ Use:
 
 Column|Content|
 -|-|
-iref (ubigint)|ref|
+iref (ubigint)|integer reference|
 
 [//]: # (IP ImeICAMOppackRetval.columns - END)
 
@@ -151,7 +151,7 @@ iref (ubigint)|ref|
 
 Super import: operation pack (1:N)
 
-Use:
+Use: define operation pack-specific settings blocks.
 
 [//]: # (IP ImeIMBlock1.superUse - END)
 
@@ -170,7 +170,7 @@ Comment (string)|comment|
 
 Super import: block (1:N)
 
-Use:
+Use: self-explanatory.
 
 [//]: # (IP ImeIAMBlockItem1.superUse - END)
 
@@ -178,23 +178,23 @@ Use:
 
 Column|Content|
 -|-|
-irefRefWznmCAMBlockItem (ubigint)|TblWznmCAMBlockItem|
+irefRefWznmCAMBlockItem (ubigint)|integer reference to ImeICAMBlockItem1|
 sref (string)|identifier|
 srefIxWznmVVartype (string)|variable data type<br>void: none<br>boolean: boolean<br>tinyint: integer / byte (8bit)<br>utinyint: unsigned integer / byte (8bit)<br>smallint: integer (16bit)<br>usmallint: unsigned integer (16bit)<br>int: integer (32bit)<br>uint: unsigned integer (32bit)<br>bigint: integer (64bit)<br>ubigint: unsigned integer (64bit)<br>float: float<br>double: double<br>string: string<br>utinyintvec: unsigned int / byte 8bit vector<br>usmallintvec: unsigned int 16bit vector<br>intvec: integer 32bit vector<br>uintvec: unsigned int 32bit vector<br>ubigintvec: unsigned int 64bit vector<br>floatvec: float vector<br>doublevec: double vector<br>floatmat: float matrix<br>doublemat: double matrix<br>stringvec: string vector<br>vecsref: vector entry string reference<br>scrref: scrambled reference|
-srefRefWznmMVector (string)|vector|
+srefRefWznmMVector (string)|vecsref variable data type - vector|
 Defval (string)|default value|
-srefRefWznmMVectoritem (string)|vector item|
+srefRefWznmMVectoritem (string)|vecsref variable data type - vector item|
 Comment (string)|comment|
 
 [//]: # (IP ImeIAMBlockItem1.columns - END)
 
-### 1.5.2 TblWznmCAMBlockItem ``[ImeICAMBlockItem1]``
+### 1.5.2 Items cluster ``[ImeICAMBlockItem1]``
 
 [//]: # (IP ImeICAMBlockItem1.superUse - BEGIN)
 
 Super import: block (1:N)
 
-Use:
+Use: group block items.
 
 [//]: # (IP ImeICAMBlockItem1.superUse - END)
 
@@ -202,7 +202,7 @@ Use:
 
 Column|Content|
 -|-|
-iref (ubigint)|ref|
+iref (ubigint)|integer reference|
 
 [//]: # (IP ImeICAMBlockItem1.columns - END)
 
@@ -212,7 +212,7 @@ iref (ubigint)|ref|
 
 Super import: operation pack (1:N)
 
-Use:
+Use: self-explanatory.
 
 [//]: # (IP ImeIMOp.superUse - END)
 
@@ -221,7 +221,7 @@ Use:
 Column|Content|
 -|-|
 sref (string)|identifier|
-Shrdat (bool)|exchange object data|
+Shrdat (bool)|shared data|
 Comment (string)|comment|
 
 [//]: # (IP ImeIMOp.columns - END)
@@ -232,7 +232,7 @@ Comment (string)|comment|
 
 Super import: operation (1:N)
 
-Use:
+Use: self-explanatory.
 
 [//]: # (IP ImeIAMOpInvarg.superUse - END)
 
@@ -240,12 +240,12 @@ Use:
 
 Column|Content|
 -|-|
-irefRefWznmCAMOpInvarg (ubigint)|TblWznmCAMOpInvarg|
+irefRefWznmCAMOpInvarg (ubigint)|integer reference to ImeICAMOpInvarg|
 sref (string)|identifier|
 srefIxWznmVVartype (string)|variable data type<br>void: none<br>boolean: boolean<br>tinyint: integer / byte (8bit)<br>utinyint: unsigned integer / byte (8bit)<br>smallint: integer (16bit)<br>usmallint: unsigned integer (16bit)<br>int: integer (32bit)<br>uint: unsigned integer (32bit)<br>bigint: integer (64bit)<br>ubigint: unsigned integer (64bit)<br>float: float<br>double: double<br>string: string<br>utinyintvec: unsigned int / byte 8bit vector<br>usmallintvec: unsigned int 16bit vector<br>intvec: integer 32bit vector<br>uintvec: unsigned int 32bit vector<br>ubigintvec: unsigned int 64bit vector<br>floatvec: float vector<br>doublevec: double vector<br>floatmat: float matrix<br>doublemat: double matrix<br>stringvec: string vector<br>vecsref: vector entry string reference<br>scrref: scrambled reference|
-srefRefWznmMVector (string)|vector|
+srefRefWznmMVector (string)|vecsref variable data type - vector|
 Defval (string)|default value|
-srefRefWznmMVectoritem (string)|vector item|
+srefRefWznmMVectoritem (string)|vecsref variable data type - vector item|
 Comment (string)|comment|
 
 [//]: # (IP ImeIAMOpInvarg.columns - END)
@@ -256,7 +256,7 @@ Comment (string)|comment|
 
 Super import: operation (1:N)
 
-Use:
+Use: self-explanatory.
 
 [//]: # (IP ImeIAMOpRetval.superUse - END)
 
@@ -264,21 +264,21 @@ Use:
 
 Column|Content|
 -|-|
-irefRefWznmCAMOpRetval (ubigint)|TblWznmCAMOpRetval|
+irefRefWznmCAMOpRetval (ubigint)|integer reference to ImeICAMOpRetval|
 sref (string)|identifier|
 srefIxWznmVVartype (string)|variable data type<br>void: none<br>boolean: boolean<br>tinyint: integer / byte (8bit)<br>utinyint: unsigned integer / byte (8bit)<br>smallint: integer (16bit)<br>usmallint: unsigned integer (16bit)<br>int: integer (32bit)<br>uint: unsigned integer (32bit)<br>bigint: integer (64bit)<br>ubigint: unsigned integer (64bit)<br>float: float<br>double: double<br>string: string<br>utinyintvec: unsigned int / byte 8bit vector<br>usmallintvec: unsigned int 16bit vector<br>intvec: integer 32bit vector<br>uintvec: unsigned int 32bit vector<br>ubigintvec: unsigned int 64bit vector<br>floatvec: float vector<br>doublevec: double vector<br>floatmat: float matrix<br>doublemat: double matrix<br>stringvec: string vector<br>vecsref: vector entry string reference<br>scrref: scrambled reference|
-srefRefWznmMVector (string)|vector|
+srefRefWznmMVector (string)|vecsref variable data type - vector|
 Comment (string)|comment|
 
 [//]: # (IP ImeIAMOpRetval.columns - END)
 
-### 1.6.3 TblWznmCAMOpInvarg ``[ImeICAMOpInvarg]``
+### 1.6.3 Invocation arguments cluster ``[ImeICAMOpInvarg]``
 
 [//]: # (IP ImeICAMOpInvarg.superUse - BEGIN)
 
 Super import: operation (1:N)
 
-Use:
+Use: group invocation arguments.
 
 [//]: # (IP ImeICAMOpInvarg.superUse - END)
 
@@ -286,17 +286,17 @@ Use:
 
 Column|Content|
 -|-|
-iref (ubigint)|ref|
+iref (ubigint)|integer reference|
 
 [//]: # (IP ImeICAMOpInvarg.columns - END)
 
-### 1.6.4 TblWznmCAMOpRetval ``[ImeICAMOpRetval]``
+### 1.6.4 Return values cluster ``[ImeICAMOpRetval]``
 
 [//]: # (IP ImeICAMOpRetval.superUse - BEGIN)
 
 Super import: operation (1:N)
 
-Use:
+Use: group return values.
 
 [//]: # (IP ImeICAMOpRetval.superUse - END)
 
@@ -304,7 +304,7 @@ Use:
 
 Column|Content|
 -|-|
-iref (ubigint)|ref|
+iref (ubigint)|integer reference|
 
 [//]: # (IP ImeICAMOpRetval.columns - END)
 
@@ -314,7 +314,7 @@ iref (ubigint)|ref|
 
 Super import: operation (1:N)
 
-Use:
+Use: define operation-specific settings blocks.
 
 [//]: # (IP ImeIMBlock2.superUse - END)
 
@@ -333,7 +333,7 @@ Comment (string)|comment|
 
 Super import: block (1:N)
 
-Use:
+Use: self-explanatory.
 
 [//]: # (IP ImeIAMBlockItem2.superUse - END)
 
@@ -341,23 +341,23 @@ Use:
 
 Column|Content|
 -|-|
-irefRefWznmCAMBlockItem (ubigint)|TblWznmCAMBlockItem|
+irefRefWznmCAMBlockItem (ubigint)|integer reference to ImeICAMBlockItem2|
 sref (string)|identifier|
 srefIxWznmVVartype (string)|variable data type<br>void: none<br>boolean: boolean<br>tinyint: integer / byte (8bit)<br>utinyint: unsigned integer / byte (8bit)<br>smallint: integer (16bit)<br>usmallint: unsigned integer (16bit)<br>int: integer (32bit)<br>uint: unsigned integer (32bit)<br>bigint: integer (64bit)<br>ubigint: unsigned integer (64bit)<br>float: float<br>double: double<br>string: string<br>utinyintvec: unsigned int / byte 8bit vector<br>usmallintvec: unsigned int 16bit vector<br>intvec: integer 32bit vector<br>uintvec: unsigned int 32bit vector<br>ubigintvec: unsigned int 64bit vector<br>floatvec: float vector<br>doublevec: double vector<br>floatmat: float matrix<br>doublemat: double matrix<br>stringvec: string vector<br>vecsref: vector entry string reference<br>scrref: scrambled reference|
-srefRefWznmMVector (string)|vector|
+srefRefWznmMVector (string)|vecsref variable data type - vector|
 Defval (string)|default value|
-srefRefWznmMVectoritem (string)|vector item|
+srefRefWznmMVectoritem (string)|vecsref variable data type - vector item|
 Comment (string)|comment|
 
 [//]: # (IP ImeIAMBlockItem2.columns - END)
 
-### 1.6.5.2 TblWznmCAMBlockItem ``[ImeICAMBlockItem2]``
+### 1.6.5.2 Items cluster ``[ImeICAMBlockItem2]``
 
 [//]: # (IP ImeICAMBlockItem2.superUse - BEGIN)
 
 Super import: block (1:N)
 
-Use:
+Use: cluster block items.
 
 [//]: # (IP ImeICAMBlockItem2.superUse - END)
 
@@ -365,7 +365,7 @@ Use:
 
 Column|Content|
 -|-|
-iref (ubigint)|ref|
+iref (ubigint)|integer reference|
 
 [//]: # (IP ImeICAMBlockItem2.columns - END)
 
@@ -375,7 +375,7 @@ iref (ubigint)|ref|
 
 Super import: operation (1:N)
 
-Use:
+Use: set human-readable status message during execution of operation.
 
 [//]: # (IP ImeIMSquawk2.superUse - END)
 
@@ -394,7 +394,7 @@ Example (string)|example|
 
 Super import: squawk (1:N)
 
-Use:
+Use: self-explanatory.
 
 [//]: # (IP ImeIJMSquawkTitle2.superUse - END)
 
@@ -403,17 +403,17 @@ Use:
 Column|Content|
 -|-|
 srefX1RefWznmMLocale (string)|locale|
-Title (string)|Title|
+Title (string)|string with placeholders|
 
 [//]: # (IP ImeIJMSquawkTitle2.columns - END)
 
-### 1.6.6.2 TblWznmRMSquawkMStub ``[ImeIRMSquawkMStub2]``
+### 1.6.6.2 Stubs ``[ImeIRMSquawkMStub2]``
 
 [//]: # (IP ImeIRMSquawkMStub2.superUse - BEGIN)
 
 Super import: squawk (1:N)
 
-Use:
+Use: define stubs included in squawk as placeholders.
 
 [//]: # (IP ImeIRMSquawkMStub2.superUse - END)
 
@@ -431,7 +431,7 @@ srefRefWznmMStub (string)|stub|
 
 Super import: operation pack (1:N)
 
-Use:
+Use: customizable operation packs only - set human-readable status message during execution of operation pack operation.
 
 [//]: # (IP ImeIMSquawk1.superUse - END)
 
@@ -450,7 +450,7 @@ Example (string)|example|
 
 Super import: squawk (1:N)
 
-Use:
+Use: self-explanatory.
 
 [//]: # (IP ImeIJMSquawkTitle1.superUse - END)
 
@@ -459,17 +459,17 @@ Use:
 Column|Content|
 -|-|
 srefX1RefWznmMLocale (string)|locale|
-Title (string)|Title|
+Title (string)|string with placeholders|
 
 [//]: # (IP ImeIJMSquawkTitle1.columns - END)
 
-### 1.7.2 TblWznmRMSquawkMStub ``[ImeIRMSquawkMStub1]``
+### 1.7.2 Stubs ``[ImeIRMSquawkMStub1]``
 
 [//]: # (IP ImeIRMSquawkMStub1.superUse - BEGIN)
 
 Super import: squawk (1:N)
 
-Use:
+Use: define stubs included in squawk as placeholders.
 
 [//]: # (IP ImeIRMSquawkMStub1.superUse - END)
 
@@ -481,13 +481,13 @@ srefRefWznmMStub (string)|stub|
 
 [//]: # (IP ImeIRMSquawkMStub1.columns - END)
 
-### 1.8 TblWznmRMComponentMOppack ``[ImeIRMComponentMOppack]``
+### 1.8 Part of components ``[ImeIRMComponentMOppack]``
 
 [//]: # (IP ImeIRMComponentMOppack.superUse - BEGIN)
 
 Super import: operation pack (1:N)
 
-Use:
+Use: assign operation packs to operation engine components.
 
 [//]: # (IP ImeIRMComponentMOppack.superUse - END)
 
@@ -499,13 +499,13 @@ srefRefWznmMComponent (string)|component|
 
 [//]: # (IP ImeIRMComponentMOppack.columns - END)
 
-### 1.9 TblWznmRMLibraryMOppack ``[ImeIRMLibraryMOppack]``
+### 1.9 Libraries ``[ImeIRMLibraryMOppack]``
 
 [//]: # (IP ImeIRMLibraryMOppack.superUse - BEGIN)
 
 Super import: operation pack (1:N)
 
-Use:
+Use: specify operation pack library requirements.
 
 [//]: # (IP ImeIRMLibraryMOppack.superUse - END)
 

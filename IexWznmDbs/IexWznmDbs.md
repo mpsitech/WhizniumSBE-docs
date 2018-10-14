@@ -13,7 +13,7 @@ Structure
 
 [//]: # (IP structure - BEGIN)
 
-<br>&nbsp;&nbsp;&nbsp;&nbsp;\- TblWznmCRelation [``[ImeICRelation]``](#1-tblwznmcrelation-imeicrelation)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;\- Relations cluster [``[ImeICRelation]``](#1-relations-cluster-imeicrelation)
 <br>&nbsp;&nbsp;&nbsp;&nbsp;\+ Relation [``[ImeIMRelation]``](#2-relation-imeimrelation)
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Names [``[ImeIAMRelationTitle]``](#21-names-imeiamrelationtitle)
 <br>&nbsp;&nbsp;&nbsp;&nbsp;\- Stub [``[ImeIMStub]``](#3-stub-imeimstub)
@@ -23,31 +23,31 @@ Structure
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Feature check [``[ImeIMCheck]``](#43-feature-check-imeimcheck)
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\+ Subset [``[ImeIMSubset]``](#44-subset-imeimsubset)
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Names [``[ImeIAMSubsetTitle]``](#441-names-imeiamsubsettitle)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- TblWznmRMSubsetMSubset [``[ImeIRMSubsetMSubset]``](#442-tblwznmrmsubsetmsubset-imeirmsubsetmsubset)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Relations to other subsets [``[ImeIRMSubsetMSubset]``](#442-relations-to-other-subsets-imeirmsubsetmsubset)
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\+ Table column [``[ImeIMTablecol]``](#45-table-column-imeimtablecol)
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Names [``[ImeIAMTablecolTitle]``](#451-names-imeiamtablecoltitle)
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\+ Vector [``[ImeIMVector2]``](#46-vector-imeimvector2)
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Names [``[ImeIAMVectorTitle2]``](#461-names-imeiamvectortitle2)
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\+ Vector item [``[ImeIMVectoritem2]``](#462-vector-item-imeimvectoritem2)
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Name and comment by locale [``[ImeIJMVectoritem2]``](#4621-name-and-comment-by-locale-imeijmvectoritem2)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- TblWznmRMTableMVector [``[ImeIRMTableMVector2]``](#463-tblwznmrmtablemvector-imeirmtablemvector2)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Main table filters [``[ImeIRMTableMVector2]``](#463-main-table-filters-imeirmtablemvector2)
 <br>&nbsp;&nbsp;&nbsp;&nbsp;\+ Vector [``[ImeIMVector1]``](#5-vector-imeimvector1)
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Names [``[ImeIAMVectorTitle1]``](#51-names-imeiamvectortitle1)
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\+ Vector item [``[ImeIMVectoritem1]``](#52-vector-item-imeimvectoritem1)
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Name and comment by locale [``[ImeIJMVectoritem1]``](#521-name-and-comment-by-locale-imeijmvectoritem1)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- TblWznmRMTableMVector [``[ImeIRMTableMVector1]``](#53-tblwznmrmtablemvector-imeirmtablemvector1)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;\- TblWznmRMStubMStub [``[ImeIRMStubMStub]``](#6-tblwznmrmstubmstub-imeirmstubmstub)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Defining tables [``[ImeIRMTableMVector1]``](#53-defining-tables-imeirmtablemvector1)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;\- Inter-stub dependencies [``[ImeIRMStubMStub]``](#6-inter-stub-dependencies-imeirmstubmstub)
 
 [//]: # (IP structure - END)
 
 Details
 ---
 
-### 1 TblWznmCRelation ``[ImeICRelation]``
+### 1 Relations cluster ``[ImeICRelation]``
 
 [//]: # (IP ImeICRelation.superUse - BEGIN)
 
-Use:
+Use: group relations (currently not in use).
 
 [//]: # (IP ImeICRelation.superUse - END)
 
@@ -55,7 +55,7 @@ Use:
 
 Column|Content|
 -|-|
-iref (ubigint)|ref|
+iref (ubigint)|integer reference|
 
 [//]: # (IP ImeICRelation.columns - END)
 
@@ -63,7 +63,7 @@ iref (ubigint)|ref|
 
 [//]: # (IP ImeIMRelation.superUse - BEGIN)
 
-Use:
+Use: establish relations between database tables.
 
 [//]: # (IP ImeIMRelation.superUse - END)
 
@@ -71,11 +71,11 @@ Use:
 
 Column|Content|
 -|-|
-iref (ubigint)|ref|
+iref (ubigint)|integer reference|
 srefIxVBasetype (string)|type<br>grp: owning user group 1:n<br>own: owner 1:n<br>_11: 1:1<br>_1n: 1:n<br>_1npref: pref sub to 1:n<br>_1nsub1n: 1:n sub to 1:n<br>mn: m:n<br>mnsubmn: m:n sub to m:n<br>mnpref: pref sub to m:n<br>drv: univ derivate<br>drvsub: fixed sub to univ derivate<br>drvusub: univ sub to univ derivate<br>inc: inclusion<br>j: jump table 1:n<br>jpref: pref sub to jump table 1:n<br>clust: cluster 1:n<br>aux: aux 1:n<br>auxpref: pref aux to aux 1:n<br>h1n: hierarchical 1:n<br>u1n: universal 1:n<br>u1nsub: 1:n sub to universal 1:n<br>u1nsubpref: pref sub to universal 1:n<br>u1nsubinc: inclusion sub to univ 1:n<br>u1nsub11: 1:1 sub to universal 1:n<br>umn: universal m:n<br>um1n: any main table 1:n<br>a1n: attribute 1:n<br>au1n: attr universal 1:n<br>au1nsub: spec sub to attr univ 1:n<br>as1n: attr string ref 1:n<br>asmn: attr string refs m:n<br>lu1n: list fct univ 1:n<br>lu1nsub: sub to list fct univ 1:n<br>lu1nlsub: list fct sub to lu1n<br>l1nop: operator sub to l1n/lu1n<br>l1noppr: partner sub 1:n to l1nop<br>l1n: list fct 1:n<br>lmn: list fct m:n<br>lmnop: operator sub to lmn<br>lmnoppr: partner sub 1:n to lmnop|
-irefRefWznmCRelation (ubigint)|TblWznmCRelation|
+irefRefWznmCRelation (ubigint)|integer reference to ImeICRelation|
 irefSupRefWznmMRelation (ubigint)|super relation|
-srefSupIxVSubrole (string)|super relation<br>void: none<br>from1n: from table<br>to1n: to table<br>submn: T table<br>pref: preferred<br>frompref: preferred in from table<br>topref: preferred in to table<br>r1n: rel table<br>mn1n: m:n rel table<br>mod: modifier<br>sub: 1:n sub<br>subl: 1:n sub with list fct<br>subinc: inclusion sub<br>sub11: 1:1 sub<br>sub1n: S table<br>pr1: partner 1<br>pr2: partner 2<br>op: list operator<br>toum1n: to any main table<br>spec: specification|
+srefSupIxVSubrole (string)|role in super relation<br>void: none<br>from1n: from table<br>to1n: to table<br>submn: T table<br>pref: preferred<br>frompref: preferred in from table<br>topref: preferred in to table<br>r1n: rel table<br>mn1n: m:n rel table<br>mod: modifier<br>sub: 1:n sub<br>subl: 1:n sub with list fct<br>subinc: inclusion sub<br>sub11: 1:1 sub<br>sub1n: S table<br>pr1: partner 1<br>pr2: partner 2<br>op: list operator<br>toum1n: to any main table<br>spec: specification|
 srefFrRefWznmMTable (string)|from table|
 srefFrsRefWznmMSubset (string)|from subset|
 srefToRefWznmMTable (string)|to table|
@@ -92,7 +92,7 @@ srefsKOption (string)|options<br>self: self-reference<br>preffrom: preferred in 
 
 Super import: relation (1:N)
 
-Use:
+Use: self-explanatory.
 
 [//]: # (IP ImeIAMRelationTitle.superUse - END)
 
@@ -110,7 +110,7 @@ Title (string)|name|
 
 [//]: # (IP ImeIMStub.superUse - BEGIN)
 
-Use:
+Use: human-readable or shorthand representation of a table record.
 
 [//]: # (IP ImeIMStub.superUse - END)
 
@@ -123,7 +123,7 @@ srefRefWznmMTable (string)|table|
 srefRefWznmMSubset (string)|subset|
 sref (string)|identifier|
 Hierarch (bool)|hierarchical|
-srefRefWznmMTablecol (string)|table column|
+srefRefWznmMTablecol (string)|single table column type - table column|
 Localized (bool)|localized|
 Example (string)|example|
 
@@ -133,7 +133,7 @@ Example (string)|example|
 
 [//]: # (IP ImeIMTable.superUse - BEGIN)
 
-Use:
+Use: database tables excluding query tables.
 
 [//]: # (IP ImeIMTable.superUse - END)
 
@@ -141,12 +141,12 @@ Use:
 
 Column|Content|
 -|-|
-srefIxVBasetype (string)|type<br>main: main<br>aux: auxiliary<br>rel: m:n<br>jump: jump<br>clust: cluster<br>list: list<br>opr: list operator<br>sub1n: sub 1:n for 1:n<br>submn: sub 1:n for m:n<br>qry: query|
-srefRefIxVTbl (string)|reference<br>void: none<br>qry: query<br>rel: relation|
+srefIxVBasetype (string)|type<br>main: main<br>aux: auxiliary<br>rel: m:n<br>jump: jump<br>clust: cluster<br>list: list<br>opr: list operator<br>sub1n: sub 1:n for 1:n<br>submn: sub 1:n for m:n|
+srefRefIxVTbl (string)|reference<br>void: none<br>rel: relation|
 irefRefUref (ubigint)|reference|
 sref (string)|identifier|
 Short (string)|acronym|
-unqSrefsWznmMTablecol (string)|table column|
+unqSrefsWznmMTablecol (string)|table columns for uniqueness rule|
 Comment (string)|comment|
 
 [//]: # (IP ImeIMTable.columns - END)
@@ -157,7 +157,7 @@ Comment (string)|comment|
 
 Super import: table (1:N)
 
-Use:
+Use: single table SQL SELECT statements frequently used in the engine / operation engine, resulting in dedicated prepared statements and C++ methods.
 
 [//]: # (IP ImeIAMTableLoadfct.superUse - END)
 
@@ -167,9 +167,9 @@ Column|Content|
 -|-|
 srefIxVLoadtype (string)|load type<br>confirm: check presence<br>count: record count<br>ref: single ref<br>refs: set of refs<br>rec: single record<br>rst: record set<br>string: single string value<br>uint: single uint value<br>hrefsup: set of refs hier. up<br>hrefsdown: set of refs hier. down<br>hrstup: record set hier. up<br>hrstdown: record set hier. down|
 Fctname (string)|function name|
-ldSrefWznmMTablecol (string)|load table column|
-lbySrefsWznmMTablecol (string)|table column|
-ordSrefsWznmMTablecol (string)|table column|
+ldSrefWznmMTablecol (string)|string, uint load types - table column to load|
+lbySrefsWznmMTablecol (string)|table columns for SQL WHERE clause|
+ordSrefsWznmMTablecol (string)|table columns for SQL ORDER BY clause ; ascending by default, descending with .desc postfix|
 srefIxVLimtype (string)|limitation type<br>void: none<br>first: single record<br>limofs: limit/offset parameters|
 
 [//]: # (IP ImeIAMTableLoadfct.columns - END)
@@ -180,7 +180,7 @@ srefIxVLimtype (string)|limitation type<br>void: none<br>first: single record<br
 
 Super import: table (1:N)
 
-Use:
+Use: self-explanatory.
 
 [//]: # (IP ImeIAMTableTitle.superUse - END)
 
@@ -201,7 +201,7 @@ Title (string)|name|
 
 Super import: table (1:N)
 
-Use:
+Use: query record for certain characteristics in C++ code (boolean result).
 
 [//]: # (IP ImeIMCheck.superUse - END)
 
@@ -222,7 +222,7 @@ Comment (string)|comment|
 
 Super import: table (1:N)
 
-Use:
+Use: make certain table columns, relations and web-based UI elements available for table records fulfilling certain conditions.
 
 [//]: # (IP ImeIMSubset.superUse - END)
 
@@ -243,7 +243,7 @@ Comment (string)|comment|
 
 Super import: subset (1:N)
 
-Use:
+Use: self-explanatory.
 
 [//]: # (IP ImeIAMSubsetTitle.superUse - END)
 
@@ -258,13 +258,13 @@ Title (string)|name|
 
 [//]: # (IP ImeIAMSubsetTitle.columns - END)
 
-### 4.4.2 TblWznmRMSubsetMSubset ``[ImeIRMSubsetMSubset]``
+### 4.4.2 Relations to other subsets ``[ImeIRMSubsetMSubset]``
 
 [//]: # (IP ImeIRMSubsetMSubset.superUse - BEGIN)
 
 Super import: subset (1:N)
 
-Use:
+Use: give set theory hints to avoid queries which include data twice.
 
 [//]: # (IP ImeIRMSubsetMSubset.superUse - END)
 
@@ -272,7 +272,7 @@ Use:
 
 Column|Content|
 -|-|
-srefBsbRefWznmMSubset (string)|subset|
+srefBsbRefWznmMSubset (string)|"B" subset|
 srefIxVReltype (string)|relation type<br>ainb: a includes b<br>bina: b includes a<br>compl: complement<br>disj: disjointedness<br>xsec: intersection|
 
 [//]: # (IP ImeIRMSubsetMSubset.columns - END)
@@ -283,7 +283,7 @@ srefIxVReltype (string)|relation type<br>ainb: a includes b<br>bina: b includes 
 
 Super import: table (1:N)
 
-Use:
+Use: self-explanatory.
 
 [//]: # (IP ImeIMTablecol.superUse - END)
 
@@ -292,13 +292,13 @@ Use:
 Column|Content|
 -|-|
 srefIxVBasetype (string)|type<br>idref: identifying reference<br>idsref: identidying string reference<br>klref: key list reference<br>tblref: table reference<br>tblsref: table string reference<br>vecref: vector reference<br>uvsref: universal vector string reference<br>grp: owning user group reference<br>own: owner reference<br>enum: enumerator<br>lvl: level in hierarchy<br>intval: integer value<br>dblval: double value<br>boolval: boolean value<br>txtval: text value<br>timeval: time value<br>expr: code expression|
-srefRefWznmMSubset (string)|subset|
+srefRefWznmMSubset (string)|subset applicable to|
 irefRefWznmMRelation (ubigint)|relation|
 srefFctIxVTbl (string)|functionality<br>void: none<br>tbl: table<br>vec: vector|
 srefFctUref (string)|functionality|
 sref (string)|identifier|
 Short (string)|acronym|
-srefIxVSubtype (string)|subtype<br>void: none<br>klrefopt: optional<br>klrefsng: single<br>klrefmult: multi<br>trefspec: specific table<br>trefuniv: universal table<br>trefmin: minor reference<br>trefclu: cluster table<br>tsrefsng: single<br>tsrefmult: multi<br>vreflin: linear vector index<br>vrefand: AND mask for mc vector<br>enauto: automatic increment<br>enspec: specific numbering<br>tinyint: integer / byte (8bit)<br>utinyint: unsigned integer / byte (8bit)<br>smallint: integer (16bit)<br>usmallint: unsigned integer (16bit)<br>int: integer (32bit)<br>uint: unsigned integer (32bit)<br>bigint: integer (64bit)<br>ubigint: unsigned integer (64bit)<br>txt5: max. 5 characters<br>txt10: max. 10 characters<br>txt30: max. 30 characters<br>txt50: max. 50 characters<br>txt100: max. 100 characters<br>txt255: max. 255 characters<br>txtlong: text field (unlimited)<br>txtbase64: Base64 encoded binary (unlimited)<br>tmdate: date<br>tmtime: time<br>tmstamp: time stamp<br>tmustamp: time stamp with usecs|
+srefIxVSubtype (string)|subtype<br>void: none<br>_[type:klref]_<br>klrefopt: optional<br>klrefsng: single<br>klrefmult: multi<br>_[type:tblref]_<br>trefspec: specific table<br>trefuniv: universal table<br>trefmin: minor reference<br>trefclu: cluster table<br>_[type:tblsref]_<br>tsrefsng: single<br>tsrefmult: multi<br>_[type:vecref]_<br>vreflin: linear vector index<br>vrefand: AND mask for mc vector<br>_[type:enum]_<br>enauto: automatic increment<br>enspec: specific numbering<br>_[type:intval]_<br>tinyint: integer / byte (8bit)<br>utinyint: unsigned integer / byte (8bit)<br>smallint: integer (16bit)<br>usmallint: unsigned integer (16bit)<br>int: integer (32bit)<br>uint: unsigned integer (32bit)<br>bigint: integer (64bit)<br>ubigint: unsigned integer (64bit)<br>_[type:txtval]_<br>txt5: max. 5 characters<br>txt10: max. 10 characters<br>txt30: max. 30 characters<br>txt50: max. 50 characters<br>txt100: max. 100 characters<br>txt255: max. 255 characters<br>txtlong: text field (unlimited)<br>txtbase64: Base64 encoded binary (unlimited)<br>_[type:timeval]_<br>tmdate: date<br>tmtime: time<br>tmstamp: time stamp<br>tmustamp: time stamp with usecs|
 srefIxVAxisfct (string)|axis functionality<br>void: none<br>pt: point<br>spt: starting point<br>ept: end point|
 srefsKOption (string)|options<br>idx: indexed|
 Principal (bool)|principal|
@@ -312,7 +312,7 @@ Eponymous (bool)|eponymous for record|
 
 Super import: table column (1:N)
 
-Use:
+Use: self-explanatory.
 
 [//]: # (IP ImeIAMTablecolTitle.superUse - END)
 
@@ -332,7 +332,7 @@ Title (string)|name|
 
 Super import: table (1:N)
 
-Use:
+Use: table-specific vector, key list of value list.
 
 [//]: # (IP ImeIMVector2.superUse - END)
 
@@ -353,7 +353,7 @@ srefsKOption (string)|options<br>noloc: non-localized<br>notit: no titles<br>cmt
 
 Super import: vector (1:N)
 
-Use:
+Use: self-explanatory.
 
 [//]: # (IP ImeIAMVectorTitle2.superUse - END)
 
@@ -373,7 +373,7 @@ Title (string)|name|
 
 Super import: vector (1:N)
 
-Use:
+Use: self-explanatory.
 
 [//]: # (IP ImeIMVectoritem2.superUse - END)
 
@@ -393,7 +393,7 @@ Implied (string)|rule for implied|
 
 Super import: vector item (1:N)
 
-Use:
+Use: self-explanatory.
 
 [//]: # (IP ImeIJMVectoritem2.superUse - END)
 
@@ -407,13 +407,13 @@ Comment (string)|Comment|
 
 [//]: # (IP ImeIJMVectoritem2.columns - END)
 
-### 4.6.3 TblWznmRMTableMVector ``[ImeIRMTableMVector2]``
+### 4.6.3 Main table filters ``[ImeIRMTableMVector2]``
 
 [//]: # (IP ImeIRMTableMVector2.superUse - BEGIN)
 
 Super import: vector (1:N)
 
-Use:
+Use: key lists only - main tables to the records of which the key list's keys refer.
 
 [//]: # (IP ImeIRMTableMVector2.superUse - END)
 
@@ -430,7 +430,7 @@ srefRefWznmMSubset (string)|subset|
 
 [//]: # (IP ImeIMVector1.superUse - BEGIN)
 
-Use:
+Use: database-specific vector.
 
 [//]: # (IP ImeIMVector1.superUse - END)
 
@@ -451,7 +451,7 @@ srefsKOption (string)|options<br>noloc: non-localized<br>notit: no titles<br>cmt
 
 Super import: vector (1:N)
 
-Use:
+Use: self-explanatory.
 
 [//]: # (IP ImeIAMVectorTitle1.superUse - END)
 
@@ -471,7 +471,7 @@ Title (string)|name|
 
 Super import: vector (1:N)
 
-Use:
+Use: self-explanatory.
 
 [//]: # (IP ImeIMVectoritem1.superUse - END)
 
@@ -491,7 +491,7 @@ Implied (string)|rule for implied|
 
 Super import: vector item (1:N)
 
-Use:
+Use: self-explanatory.
 
 [//]: # (IP ImeIJMVectoritem1.superUse - END)
 
@@ -505,13 +505,13 @@ Comment (string)|Comment|
 
 [//]: # (IP ImeIJMVectoritem1.columns - END)
 
-### 5.3 TblWznmRMTableMVector ``[ImeIRMTableMVector1]``
+### 5.3 Defining tables ``[ImeIRMTableMVector1]``
 
 [//]: # (IP ImeIRMTableMVector1.superUse - BEGIN)
 
 Super import: vector (1:N)
 
-Use:
+Use: key lists only - tables which use this key list, resulting in editing functionality in the table's card.
 
 [//]: # (IP ImeIRMTableMVector1.superUse - END)
 
@@ -524,11 +524,11 @@ srefRefWznmMSubset (string)|subset|
 
 [//]: # (IP ImeIRMTableMVector1.columns - END)
 
-### 6 TblWznmRMStubMStub ``[ImeIRMStubMStub]``
+### 6 Inter-stub dependencies ``[ImeIRMStubMStub]``
 
 [//]: # (IP ImeIRMStubMStub.superUse - BEGIN)
 
-Use:
+Use: establish hierarchy for automated stub updates.
 
 [//]: # (IP ImeIRMStubMStub.superUse - END)
 
@@ -536,8 +536,8 @@ Use:
 
 Column|Content|
 -|-|
-srefSupRefWznmMStub (string)|stub|
-srefSubRefWznmMStub (string)|stub|
+srefSupRefWznmMStub (string)|super stub|
+srefSubRefWznmMStub (string)|sub-stub (containing super stub)|
 
 [//]: # (IP ImeIRMStubMStub.columns - END)
 

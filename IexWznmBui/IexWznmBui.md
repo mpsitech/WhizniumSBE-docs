@@ -28,7 +28,7 @@ Details
 
 [//]: # (IP ImeIMModule.superUse - BEGIN)
 
-Use:
+Use: grouping entity for cards (only relevance: web-based UI navigation card).
 
 [//]: # (IP ImeIMModule.superUse - END)
 
@@ -46,7 +46,7 @@ sref (string)|identifier|
 
 Super import: module (1:N)
 
-Use:
+Use: self-explanatory.
 
 [//]: # (IP ImeIJMModule.superUse - END)
 
@@ -66,7 +66,7 @@ Comment (string)|Comment|
 
 Super import: module (1:N)
 
-Use:
+Use: basic unit for web-based UI - database backed (tbl, sbs references) with list/record view or custom content.
 
 [//]: # (IP ImeIMCard.superUse - END)
 
@@ -78,7 +78,7 @@ srefRefIxVTbl (string)|reference<br>void: none<br>tbl: table<br>sbs: subset|
 srefRefUref (string)|reference|
 sref (string)|identifier|
 Avail (string)|availability rule|
-Active (string)|activation rule|
+Active (string)|activation rule, typically implicating session-wide presettings|
 
 [//]: # (IP ImeIMCard.columns - END)
 
@@ -88,7 +88,7 @@ Active (string)|activation rule|
 
 Super import: card (1:N)
 
-Use:
+Use: self-explanatory. Not required for database backed cards.
 
 [//]: # (IP ImeIJMCardTitle.superUse - END)
 
@@ -105,7 +105,7 @@ Title (string)|Title|
 
 [//]: # (IP ImeIMPreset.superUse - BEGIN)
 
-Use:
+Use: mostly retrieve card scope record reference presetting and bump it up to session scope.
 
 [//]: # (IP ImeIMPreset.superUse - END)
 

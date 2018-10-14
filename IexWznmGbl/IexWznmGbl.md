@@ -16,7 +16,7 @@ Structure
 <br>&nbsp;&nbsp;&nbsp;&nbsp;\+ Block [``[ImeIMBlock]``](#1-block-imeimblock)
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\+ Items [``[ImeIAMBlockItem]``](#11-items-imeiamblockitem)
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Default value by release [``[ImeIJAMBlockItem]``](#111-default-value-by-release-imeijamblockitem)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- TblWznmCAMBlockItem [``[ImeICAMBlockItem]``](#12-tblwznmcamblockitem-imeicamblockitem)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Items cluster [``[ImeICAMBlockItem]``](#12-items-cluster-imeicamblockitem)
 <br>&nbsp;&nbsp;&nbsp;&nbsp;\+ Vector [``[ImeIMVector]``](#2-vector-imeimvector)
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- Names [``[ImeIAMVectorTitle]``](#21-names-imeiamvectortitle)
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\+ Vector item [``[ImeIMVectoritem]``](#22-vector-item-imeimvectoritem)
@@ -31,7 +31,7 @@ Details
 
 [//]: # (IP ImeIMBlock.superUse - BEGIN)
 
-Use:
+Use: insert or retrieve settings XML data blocks.
 
 [//]: # (IP ImeIMBlock.superUse - END)
 
@@ -53,7 +53,7 @@ Comment (string)|comment|
 
 Super import: block (1:N)
 
-Use:
+Use: self-explanatory.
 
 [//]: # (IP ImeIAMBlockItem.superUse - END)
 
@@ -62,13 +62,13 @@ Use:
 Column|Content|
 -|-|
 srefIxWznmVIop (string)|import operation<br>ins: insert<br>retr: retrieve<br>retrupd: retrieve and update|
-irefRefWznmCAMBlockItem (ubigint)|TblWznmCAMBlockItem|
+irefRefWznmCAMBlockItem (ubigint)|integer reference to ImeICAMBlockItem|
 srefIxVBasetype (string)|type<br>var: standard variable<br>conpar: control parameter<br>contit: control title<br>feed: feed<br>rst: record set of query table<br>sub: sub-block|
 sref (string)|identifier|
 srefIxWznmVVartype (string)|variable data type<br>void: none<br>boolean: boolean<br>tinyint: integer / byte (8bit)<br>utinyint: unsigned integer / byte (8bit)<br>smallint: integer (16bit)<br>usmallint: unsigned integer (16bit)<br>int: integer (32bit)<br>uint: unsigned integer (32bit)<br>bigint: integer (64bit)<br>ubigint: unsigned integer (64bit)<br>float: float<br>double: double<br>string: string<br>utinyintvec: unsigned int / byte 8bit vector<br>usmallintvec: unsigned int 16bit vector<br>intvec: integer 32bit vector<br>uintvec: unsigned int 32bit vector<br>ubigintvec: unsigned int 64bit vector<br>floatvec: float vector<br>doublevec: double vector<br>floatmat: float matrix<br>doublemat: double matrix<br>stringvec: string vector<br>vecsref: vector entry string reference<br>scrref: scrambled reference|
-srefRefWznmMVector (string)|vector|
+srefRefWznmMVector (string)|vecsref variable data type - vector|
 Defval (string)|default value|
-srefRefWznmMVectoritem (string)|vector item|
+srefRefWznmMVectoritem (string)|vecsref variable data type - vector item|
 Comment (string)|comment|
 
 [//]: # (IP ImeIAMBlockItem.columns - END)
@@ -79,7 +79,7 @@ Comment (string)|comment|
 
 Super import: items (1:N)
 
-Use:
+Use: customize preferences files to machine-/release-specific default values.
 
 [//]: # (IP ImeIJAMBlockItem.superUse - END)
 
@@ -89,17 +89,17 @@ Column|Content|
 -|-|
 srefX1RefWznmMRelease (string)|release|
 Defval (string)|Defval|
-srefRefWznmMVectoritem (string)|vector item|
+srefRefWznmMVectoritem (string)|vecsref variable data type - vector item|
 
 [//]: # (IP ImeIJAMBlockItem.columns - END)
 
-### 1.2 TblWznmCAMBlockItem ``[ImeICAMBlockItem]``
+### 1.2 Items cluster ``[ImeICAMBlockItem]``
 
 [//]: # (IP ImeICAMBlockItem.superUse - BEGIN)
 
 Super import: block (1:N)
 
-Use:
+Use: group block items.
 
 [//]: # (IP ImeICAMBlockItem.superUse - END)
 
@@ -107,7 +107,7 @@ Use:
 
 Column|Content|
 -|-|
-iref (ubigint)|ref|
+iref (ubigint)|integer reference|
 
 [//]: # (IP ImeICAMBlockItem.columns - END)
 
@@ -115,7 +115,7 @@ iref (ubigint)|ref|
 
 [//]: # (IP ImeIMVector.superUse - BEGIN)
 
-Use:
+Use: global vectors with project-wide significance.
 
 [//]: # (IP ImeIMVector.superUse - END)
 
@@ -123,7 +123,7 @@ Use:
 
 Column|Content|
 -|-|
-srefIxVBasetype (string)|type<br>lin: linear<br>or: multiple-choice<br>klst: key list<br>vlst: value list|
+srefIxVBasetype (string)|type<br>lin: linear<br>or: multiple-choice|
 sref (string)|identifier|
 osrefWznmKTaggrp (string)|source tag group<br>access: VecXxxxWAccess item<br>adrtype: address type<br>ctdet: contact detail<br>ctry: country<br>expstate: VecXxxxVExpstate item<br>iop: VecXxxxVIop item<br>lat: VecXxxxVLat item<br>lop: VecXxxxVLop item<br>mimetype: MIME type<br>no: no thing<br>none: none<br>oolop: VecXxxxVOolop item<br>prs: default person<br>prstit: person title<br>qrystate: VecXxxxVQrystate item<br>recaccess: VecXxxxVRecaccess item<br>reqitmode: VecXxxxVReqitmode item<br>sex: sex<br>start: login card<br>stdalr: standard alert message<br>stdrel: standard relation title<br>stdtbl: standard table title<br>stdtco: standard table column title<br>stdvec: standard vector title<br>uiaccess: VecXxxxWUiaccess item<br>userlevel: VecXxxxVUserlevel item<br>usrste: user state<br>wkday: weekday|
 srefsKOption (string)|options<br>noloc: non-localized<br>notit: no titles<br>cmt: comments<br>apdfed: append to feed<br>filfed: fill feed|
@@ -136,7 +136,7 @@ srefsKOption (string)|options<br>noloc: non-localized<br>notit: no titles<br>cmt
 
 Super import: vector (1:N)
 
-Use:
+Use: self-explanatory.
 
 [//]: # (IP ImeIAMVectorTitle.superUse - END)
 
@@ -156,7 +156,7 @@ Title (string)|name|
 
 Super import: vector (1:N)
 
-Use:
+Use: self-explanatory.
 
 [//]: # (IP ImeIMVectoritem.superUse - END)
 
